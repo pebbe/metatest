@@ -1,0 +1,5 @@
+@prefix schema: <http://schema.org/> .
+
+<https://pebbe.github.io/metatest/> a schema:SoftwareSourceCode ;
+  schema:name "metatest" ;
+  schema:description "een test met metadata" .
