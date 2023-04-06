@@ -1,0 +1,341 @@
+<html>
+  <head>
+    <title>PaQu &mdash; Software Source Code</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+
+      body {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        color: black;
+        background-color: #78909c;
+        line-height: 160%;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: purple;
+        letter-spacing: 0.1em;
+        margin-top: 2em;
+      }
+
+      h1 {
+        font-size: xx-large;
+        font-weight: 200;
+        border-bottom: 1px solid purple;
+      }
+
+      h2 {
+        font-size: x-large;
+        font-weight: 300;
+      }
+
+      h3 {
+        font-size: large;
+        font-weight: 400;
+      }
+
+      h4 {
+        font-size: medium;
+        font-weight: 500;
+      }
+
+      h5 {
+        font-size: small;
+        font-weight: 600;
+      }
+
+      h6 {
+        font-size: x-small;
+        font-weight: 700;
+      }
+
+      #container {
+        width: 960px;
+        margin: 2em auto;
+        padding: 1em;
+        border: 1px solid black;
+        background-color: #f5fffa;
+        -webkit-box-shadow: 10px 16px 18px -6px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 10px 16px 18px -6px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 16px 18px -6px rgba(0, 0, 0, 0.5);
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      dt {
+        margin-top: 1em;
+      }
+
+      dd {
+        margin-top: 0.5em;
+      }
+
+      @media screen and (max-width: 980px) {
+        body {
+          background-color: white;
+        }
+
+        #container {
+          max-width: 100%;
+          margin: 0px;
+          border: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body prefix="codemeta: https://codemeta.github.io/terms/">
+    <div id="container">
+      <h1>PaQu</h1>
+      <h2>Software Source Code</h2>
+      <dl
+        resource="https://rug-compling.github.io/paqu/"
+        typeof="schema:SoftwareSourceCode"
+      >
+        <dd class="hidden">
+          <span property="schema:dateCreated">2014-05-21</span>
+          <span property="schema:dateModified">2023-03-30</span>
+          <span property="schema:version">1.0.1</span>
+        </dd>
+
+        <dt>naam:</dt>
+        <dd property="schema:name">PaQu</dd>
+        <dt>beschrijving:</dt>
+        <dd property="schema:description">
+          Met PaQu (Parse &amp; Query) kun je zoeken in syntactisch geannoteerde
+          Nederlandstalige corpora.<br /><br />
+
+          PaQu ondersteunt twee manieren van zoeken. Met de eerste, eenvoudige,
+          manier kun je naar woordparen zoeken, met daarbij eventueel hun
+          syntactische relatie. De tweede, ingewikkeldere, manier gebruikt de
+          zoektaal XPath.<br /><br />
+
+          In PaQu is een aantal syntactisch geannoteerde corpora standaard
+          beschikbaar. Maar het is ook mogelijk om je eigen teksten aan te
+          bieden. Deze teksten worden dan door de automatische ontleder
+          geanalyseerd, en opgeslagen. Vervolgens kun je dan op dezelfde manier
+          in je eigen teksten zoeken.
+        </dd>
+
+        <dt></dt>
+        <dt <dt>auteur:</dt>
+        <dd>
+          <span
+            property="schema:author"
+            typeof="schema:Person"
+            resource="_:pkleiweg"
+          ></span
+          ><a href="https://www.rug.nl/staff/p.c.j.kleiweg/">Peter Kleiweg</a>
+        </dd>
+
+        <dd>
+          <a href="https://www.rug.nl/research/clcg/research/cl/"
+            >Computationele Taalkunde</a
+          >, Faculteit der Letteren, Rijksuniversiteit Groningen
+        </dd>
+        <dt>onderhouder:</dt>
+        <dd>
+          <span
+            property="codemeta:maintainer"
+            typeof="schema:Person"
+            resource="_:pkleiweg"
+            >Peter Kleiweg</span
+          >
+        </dd>
+        <dt>toepassing:</dt>
+        <dd>
+          <a
+            href="https://vocabs.dariah.eu/tadirah/structuralAnalysis"
+            property="schema:applicationCategory"
+            >Structural Analysis</a
+          >
+        </dd>
+
+        <dd>
+          <a
+            href="https://w3id.org/nwo-research-fields#ComputationalLinguisticsAndPhilology"
+            property="schema:applicationCategory"
+            >Computational Linguistics and Philology</a
+          >
+        </dd>
+
+        <dd>
+          <a
+            href="https://w3id.org/nwo-research-fields#Linguistics"
+            property="schema:applicationCategory"
+            >Linguistics</a
+          >
+        </dd>
+        <dd>
+          <a
+            href="https://w3id.org/nwo-research-fields#SoftwareForHumanities"
+            property="schema:applicationCategory"
+            >Software for Humanities</a
+          >
+        </dd>
+        <dt>bronnen:</dt>
+        <dd>
+          <a
+            href="https://github.com/rug-compling/paqu.git"
+            property="schema:codeRepository"
+            >github</a
+          >
+        </dd>
+        <dd class="hidden">
+          <a
+            href="https://github.com/rug-compling/paqu/issues"
+            property="codemeta:issueTracker"
+            >issues</a
+          >
+        </dd>
+        <dd class="hidden">
+          <a
+            href="https://spdx.org/licenses/BSD-2-Clause"
+            property="schema:license"
+            >license</a
+          >
+        </dd>
+        <dd class="hidden">
+          <a
+            href="https://github.com/rug-compling/paqu/blob/master/README.md"
+            property="codemeta:readme"
+            >README</a
+          >
+        </dd>
+        <dd class="hidden">
+          <a
+            href="https://github.com/rug-compling/paqu/archive/refs/heads/master.zip"
+            property="schema:downloadUrl"
+            >download</a
+          >
+        </dd>
+
+        <dt>status:</dt>
+        <dd>
+          <a
+            href="https://www.repostatus.org/#active"
+            property="codemeta:developmentStatus"
+            >actief onderhouden</a
+          >,
+          <a
+            href="https://w3id.org/research-technology-readiness-levels#Stage4Complete"
+            property="codemeta:developmentStatus"
+            >compleet</a
+          >
+        </dd>
+
+        <dt>zie ook:</dt>
+        <dd>
+          <a href="https://tools.clariah.nl/paqu" property="schema:seeAlso"
+            >Clariah Tool Index</a
+          >
+        </dd>
+        <dt>vergelijkbare software:</dt>
+        <dd>
+          <a
+            href="https://rug-compling.github.io/alpinograph/"
+            property="dcterms:related"
+            >AlpinoGraph</a
+          >
+        </dd>
+        <dd>
+          <a href="https://tools.clariah.nl/gretel" property="dcterms:related"
+            >GrETEL</a
+          >
+        </dd>
+      </dl>
+
+      <div typeof="schema:Person" resource="_:pkleiweg" class="hidden">
+        <span property="schema:givenName">Peter</span>
+        <span property="schema:familyName">Kleiweg</span>
+        <a href="mailto:p.c.j.kleiweg@rug.nl" property="schema:email"
+          >p.c.j.kleiweg@rug.nl</a
+        >
+        <span
+          property="schema:affiliation"
+          typeof="schema:Organization"
+          resource="_:cl"
+        ></span>
+        <a
+          href="https://orcid.org/0000-0001-8364-3201"
+          property="schema:sameAs"
+        ></a>
+      </div>
+
+      <div typeof="schema:Organization" resource="_:cl" class="hidden">
+        <span
+          property="schema:name"
+          lang="nl"
+          content="Computationele Taalkunde, Faculteit der Letteren, Rijksuniversiteit Groningen"
+        ></span>
+        <span
+          property="schema:name"
+          lang="en"
+          content="Computational Linguistics, Faculty of Arts, Groningen University"
+        ></span>
+        <span
+          property="schema:parentOrganization"
+          typeof="schema:Organization"
+          resource="_:rug"
+        ></span>
+        <a
+          href="https://www.rug.nl/research/clcg/research/cl/"
+          property="schema:url"
+        ></a>
+      </div>
+
+      <div typeof="schema:Organization" resource="_:rug" class="hidden">
+        <a href="https://www.rug.nl/" property="schema:url"></a>
+        <span property="schema:name" lang="nl"
+          >Rijksuniversiteit Groningen</span
+        >
+        <span property="schema:name" lang="en">Groningen University</span>
+        <a
+          property="schema:sameAs"
+          href="http://www.wikidata.org/entity/Q850730"
+        ></a>
+        <span
+          property="schema:location"
+          typeof="schema:Place"
+          resource="_:groningen"
+        ></span>
+      </div>
+
+      <div typeof="schema:Place" resource="_:groningen" class="hidden">
+        <span
+          property="schema:address"
+          typeof="schema:PostalAddress"
+          resource="_:grnNL"
+        ></span>
+        <span property="schema:name">Groningen</span>
+        <a
+          property="schema:sameAs"
+          href="http://www.wikidata.org/entity/Q749"
+        ></a>
+        <a
+          property="schema:sameAs"
+          href="https://sws.geonames.org/2755251/"
+        ></a>
+      </div>
+
+      <div typeof="schema:PostalAddress" resource="_:grnNL" class="hidden">
+        <span property="schema:addressLocality">Groningen</span>
+        <span property="schema:addressRegion">Groningen</span>
+        <span property="schema:addressCountry" lang="nl">Nederland</span>
+        <span property="schema:addressCountry" lang="en">The Netherlands</span>
+      </div>
+    </div>
+  </body>
+</html>
